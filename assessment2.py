@@ -1,94 +1,68 @@
-# 1. Calculate the remainder of two numbers
+# 1. Remainder of two numbers
 
-num1 = 17
-num2 = 5
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
-remainder = num1 % num2
+print("Remainder =", a % b)
 
-print("Remainder is:", remainder)
+# 2. Even or Odd
 
-# 2. Check if a number is even or odd
+num = int(input("Enter a number: "))
 
-num = 8
+print("Even" if num % 2 == 0 else "Odd")
 
-if num % 2 == 0:
-    print(num, "is Even")
-else:
-    print(num, "is Odd")
+# 3. Larger number
 
-# 3. Compare two numbers and print the larger one
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
-a = 25
-b = 40
+print("Larger number =", max(a, b))
 
-if a > b:
-    print(a, "is larger")
-else:
-    print(b, "is larger")
+# 4. Square and Cube
 
-# 4. Calculate square and cube of a number
+num = int(input("Enter a number: "))
 
-num = 4
+print("Square =", num**2)
+print("Cube =", num**3)
 
-square = num ** 2
-cube = num ** 3
+# 5. Check equal numbers
 
-print("Square =", square)
-print("Cube =", cube)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
-# 5. Check if two entered numbers are equal
+print(a == b)
 
-num1 = 10
-num2 = 10
+# 6. Both numbers positive
 
-if num1 == num2:
-    print("Both numbers are equal")
-else:
-    print("Numbers are not equal")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
-# 6. Check if both numbers are positive
+print(a > 0 and b > 0)
 
-a = 5
-b = 9
+# 7. Float to Integer
 
-result = a > 0 and b > 0
+num = float(input("Enter a float number: "))
 
-print(result)
+print(int(num))
 
-# 7. Convert float to integer
+# 8. String to int and multiply by 10
 
-num = 12.75
+num = input("Enter a number: ")
 
-integer_num = int(num)
+print(int(num) * 10)
 
-print("Integer value:", integer_num)
+# 9. Using and / or operators
 
-# 8. Take a number as string, convert to int, and multiply by 10
+age = int(input("Enter age: "))
+license = input("Do you have license (True/False): ") == "True"
 
-num = "7"
+print(age >= 18 and license)
+print(age < 18 or not license)
 
-result = int(num) * 10
+# 10. Quotient and Remainder
 
-print(result)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
-# 9. Use and & or operators to check multiple conditions
-
-age = 20
-has_license = True
-
-if age >= 18 and has_license:
-    print("Can drive")
-
-if age < 18 or not has_license:
-    print("Cannot drive")
-
-# 10. Divide two numbers and print quotient and remainder separately
-
-num1 = 20
-num2 = 3
-
-quotient = num1 // num2
-remainder = num1 % num2
-
-print("Quotient =", quotient)
-print("Remainder =", remainder)
+print("Quotient =", a // b)
+print("Remainder =", a % b)
